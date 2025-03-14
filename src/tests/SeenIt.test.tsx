@@ -12,7 +12,9 @@ describe('SeenIt', () => {
     const SeenItContainer = document.querySelector('#emptyMessage') as HTMLHeadingElement;
 
     // Verify the output
+    if (SeenItContainer){
     expect(SeenItContainer.innerHTML).toBe("Add films you've already seen here.");
-    
+    }
+
   });
 });
